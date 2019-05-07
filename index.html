@@ -1,0 +1,466 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>iSafety</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="segurança, aplicativo, assaltos, furtos, roubos, polícia, registro" />
+	<meta name="author" content="Cássio Amaral, Douglas Colombo e Lucas Iankoski" />
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<script src="js/login.js"></script>
+	<link rel="stylesheet" href="css/login.css">
+
+	</head>
+	<body>
+		
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Entrar/Cadastrar</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Entrar</a></li>
+                            <li><a href="#Registration" data-toggle="tab">Cadastrar</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Login">
+                                <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        CPF</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="email1" placeholder="000.000.000-50" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1" class="col-sm-2 control-label">
+                                        Senha</label>
+                                    <div class="col-sm-10">
+                                        <input type="Password" class="form-control" id="exampleInputPassword1" placeholder="******" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                       <button type="submit" class="btn btn-primary btn-sm"> <a style="color: white;" href="practice.php">Acessar</a></button>
+                                        <a href="javascript:;">Esqueceu sua senha?</a>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="Registration">
+                                <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Nome</label>
+                                    <div class="col-sm-10">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <select class="form-control">
+                                                    <option>Sr.</option>
+                                                    <option>Sra.</option>                  
+                                                </select>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" placeholder="Nome" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        E-mail</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email" placeholder="isafety@contato.com.br" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile" class="col-sm-2 control-label">
+                                        CPF</label>
+                                    <div class="col-sm-10">
+                                        <input type="CPF" class="form-control" id="mobile" placeholder="000.000.000-50" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-2 control-label">
+                                        Senha</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="password" placeholder="******" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-primary btn-sm">
+                                            Salvar	</button>
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            Cancelar</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="OR" class="hidden-xs">
+                            OU</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row text-center sign-with">
+                            <div class="col-md-12">
+                                <h3>
+                                    Entre utilizando</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="btn-group btn-group-justified">
+                                    <a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">
+                                        Google</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	
+														<!-- Fim da tela de login/cadastro --->
+
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="index.html">iSafety<span>.</span></a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>												
+							<li><a href="about.html">Quem somos</a></li>
+							<li><a href="contact.html">Contato</a></li>
+							<li class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  							  Entrar</button></li>
+							
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+
+	<aside id="fh5co-hero" class="js-fullheight">
+		<div class="flexslider js-fullheight">
+			<ul class="slides">
+		   	<li style="background-image: url(images/img_bg_1.jpg);">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>Soluções inteligentes</h1>
+									<h2>Soluções para criar interações de informações </h2>
+									<p><a class="btn btn-primary btn-lg" href="#">Começar agora!</a></p>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url(images/img_bg_2.jpg);">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>Colabore com a segurança</h1>
+									<h2>Com o iSafety você pode ajudar à prevenir a sua segurança e a do próximo.</h2>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Começar agora!</a></p>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url(images/img_bg_3.jpg);">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>Auxiliar os cidadãos</h1>
+									<h2>Junte-se ao iSafety para um caminho com mais informação e segurança</h2>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Começar agora!</a></p>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>		   	
+		  	</ul>
+	  	</div>
+	</aside>
+	
+
+	<div id="fh5co-counter" class="fh5co-counters fh5co-bg-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 text-center animate-box">
+					<span class="icon"><i class="icon-user"></i></span>
+					<span class="fh5co-counter js-counter" data-from="0" data-to="3" data-speed="2500" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">Usuários</span>
+				</div>
+				<div class="col-md-3 text-center animate-box">
+					<span class="icon"><i class="icon-speech-bubble"></i></span>
+					<span class="fh5co-counter js-counter" data-from="0" data-to="22" data-speed="2500" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">Registros</span>
+				</div>
+				<div class="col-md-3 text-center animate-box">
+					<span class="icon"><i class="icon-trophy"></i></span>
+					<span class="fh5co-counter js-counter" data-from="0" data-to="2" data-speed="2500" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">Municípios</span>
+				</div>
+				<div class="col-md-3 text-center animate-box">
+					<span class="icon"><i class="icon-users"></i></span>
+					<span class="fh5co-counter js-counter" data-from="0" data-to="5" data-speed="2500" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">Recomendações</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-content">
+		<div class="video fh5co-video" style="background-image: url(images/video.jpg);">
+			
+
+			<div class="overlay"></div>
+		</div>
+		<div class="choose animate-box">
+			<div class="fh5co-heading">
+				<h2>Por que utilizar o iSafe?</h2>
+				<p>Sistema altamento preparado para auxiliar na segurança do seu dia-a-dia. Dinâmico e integrado, visando sempre disponibilizar informações das ocorrências ao seu redor. </p>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+				Adaptação 50%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+				Aceitação do público 80%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+				Usabilidade dentre usuários 70%
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+				Recomendações pós uso 40%
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	
+
+	<div id="fh5co-consult"> <!-- Div que unifica parte escura e o FALE CONOSCO-->
+		<div class="video fh5co-video" style="background-image: url(images/video.jpg);">
+			
+
+			<div class="overlay"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.212759237893!2d-51.22678568534208!3d-30.03075343759941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979063bccf2cb%3A0xaa8f323fe7072ee9!2sAlcides+Maya+-+Faculdade+e+Escola+T%C3%A9cnica!5e0!3m2!1spt-BR!2sbr!4v1540254436769" width="100%" height="100%" frameborder="1" style="border:20" allowfullscreen></iframe></div>
+		
+		
+			</div>
+
+		<div class="choose animate-box">
+
+			<div class="fh5co-heading">
+				<h2 style="text-align: center";>Fale conocosco</h2>
+			</div>
+
+			<form action="#">
+				<div class="row form-group">
+					<div class="col-md-6">
+						<!-- <label for="fname">First Name</label> -->
+						<input type="text" id="fname" class="form-control" placeholder="Nome">
+					</div>
+					<div class="col-md-6">
+						<!-- <label for="lname">Last Name</label> -->
+						<input type="text" id="lname" class="form-control" placeholder="Sobrenome">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<!-- <label for="email">Email</label> -->
+						<input type="text" id="email" class="form-control" placeholder="E-mail">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<!-- <label for="subject">Subject</label> -->
+						<input type="text" id="subject" class="form-control" placeholder="Assunto da sua mensagem">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<!-- <label for="message">Message</label> -->
+						<textarea name="message" id="message" cols="30" rows="2" class="form-control" placeholder="Diga algo para nós"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Enviar" class="btn btn-primary">
+				</div>
+
+			</form>	
+		</div>
+	</div>
+</div>
+
+	
+
+	
+
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-3 fh5co-widget">
+					<h4>Wards para evitar ganks!</h4>
+					<p>Desenvolvendo uma comunidade mais segura, com a ajuda de todos.</p>
+				</div>
+				<div class="col-md-3 col-md-push-1">
+					<h4>Navegação</h4>
+					<ul class="fh5co-footer-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="contact.html">Contato</a></li>						
+						<li><a href="about.html">Quem somos</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-3 col-md-push-1">
+					<h4>Informações de contato</h4>
+					<ul class="fh5co-footer-links">
+						<li>Rua Dr. Flores, 396 <br> Centro Histórico, Porto Alegre, 90020-121</li>
+						<li><a href="tel://1234567920">(51) 99606-4406</a></li>
+						<li><a href="mailto:info@yoursite.com">cassioamara@hotmail.com</a></li>
+						
+					</ul>
+				</div>
+
+				<div class="col-md-3 col-md-push-1">
+					<h4>Horário de suporte</h4>
+					<ul class="fh5co-footer-links">
+						<li>Seg - Sex: 9:00 - 21 00</li>
+						
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2018 iSafety. Todos os direitos reservados.</small> 
+						<small class="block">Desenvolvido por Cássio Amaral, Douglas Colombo e Lucas Iankoski</a></small>
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
